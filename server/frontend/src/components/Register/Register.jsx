@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+
 import "./Register.css";
-import user_icon from "../assets/person.png"
-import email_icon from "../assets/email.png"
-import password_icon from "../assets/password.png"
-import close_icon from "../assets/close.png"
+import user_icon from "../assets/person.png";
+import email_icon from "../assets/email.png";
+import password_icon from "../assets/password.png";
+import close_icon from "../assets/close.png";
 
 const Register = () => {
 
@@ -33,7 +34,7 @@ const Register = () => {
             "password": password,
             "firstName":firstName,
             "lastName":lastName,
-            "email":email
+            "email":email,
         }),
     });
 
@@ -92,7 +93,7 @@ const Register = () => {
         </div>
       </form>
       </div>
-  )
-}
+  );
+};
 
 export default Register;
