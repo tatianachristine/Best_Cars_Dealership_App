@@ -10,34 +10,34 @@ const dealerships = new Schema({
 	city: {
     type: String,
     required: true
-  },
-  state: {
+    },
+    state: {
     type: String,
     required: true
-  },
-  address: {
+    },
+    address: {
     type: String,
     required: true
-  },
-  zip: {
+    },
+    zip: {
     type: String,
     required: true
-  },
-  lat: {
+    },
+    lat: {
     type: String,
     required: true
-  },
-  long: {
+    },
+    long: {
     type: String,
     required: true
-  },
-  short_name: {
+    },
+    short_name: {
     type: String,
-  },
-  full_name: {
+    },
+    full_name: {
     type: String,
     required: true
-  }
+    }
 });
 
 module.exports = mongoose.model('dealerships', dealerships);

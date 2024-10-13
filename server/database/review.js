@@ -10,35 +10,35 @@ const reviews = new Schema({
 	name: {
     type: String,
     required: true
-  },
-  dealership: {
+    },
+    dealership: {
     type: Number,
     required: true,
-  },
-  review: {
+    },
+    review: {
     type: String,
     required: true
-  },
-  purchase: {
+    },
+    purchase: {
     type: Boolean,
     required: true
-  },
-  purchase_date: {
+    },
+    purchase_date: {
     type: String,
     required: true
-  },
-  car_make: {
+    },
+    car_make: {
     type: String,
     required: true
-  },
-  car_model: {
+    },
+    car_model: {
     type: String,
     required: true
-  },
-  car_year: {
+    },
+    car_year: {
     type: Number,
     required: true
-  },
+    }
 });
 
 module.exports = mongoose.model('reviews', reviews);
