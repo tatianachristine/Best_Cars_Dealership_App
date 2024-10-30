@@ -79,12 +79,22 @@ def registration(request):
 
 # # Update the `get_dealerships` view to render the index page with
 # a list of dealerships
-# def get_dealerships(request):
-# ...
+def get_dealerships(request):
+    context = {}
+
+    data = json.loads(request.body)
+    dealerships = data['dealerships']
+    return JsonResponse(data)
 
 # Create a `get_dealer_reviews` view to render the reviews of a dealer
-# def get_dealer_reviews(request,dealer_id):
-# ...
+def get_dealer_reviews(request, dealer_id):
+    context = {}
+
+    data = json.loads(request.body)
+    reviews = data['reviews']
+    dealer_id = data['dealership']
+    if dealer_id = "id mat"
+
 
 # Create a `get_dealer_details` view to render the dealer details
 # def get_dealer_details(request, dealer_id):
